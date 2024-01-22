@@ -5,6 +5,7 @@ import { HeaderUserComponent } from '@shared/components/header-user/header-user.
 import { MediaPlayerComponent } from '@shared/components/media-player/media-player.component';
 import { CardPlayerComponent } from '@shared/components/card-player/card-player.component';
 import { SectionGenericComponent } from './components/section-generic/section-generic.component';
+import { RouterLink } from '@angular/router';
 
 
 
@@ -17,7 +18,8 @@ import { SectionGenericComponent } from './components/section-generic/section-ge
     SectionGenericComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterLink
   ],
   exports: [
     SideBarComponent,

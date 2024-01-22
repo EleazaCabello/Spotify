@@ -1,0 +1,12 @@
+.tracks-page {
+    padding: 1rem;
+}
+
+.separador-tracks-page{
+    width: 100%;
+    background-color: rgb(210, 210, 210);
+    margin-right: 1px;
+    height: 1px;
+    border-radius: 50%;
+    box-shadow: 8px 3px 10px rgb(190, 190, 190);
+}
