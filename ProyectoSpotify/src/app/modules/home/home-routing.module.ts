@@ -5,7 +5,7 @@ import { HomePageComponent } from '@modules/home/pages/home-page/home-page.compo
 const routes: Routes = [
   {
     path:"tracks",
-    loadChildren: () => import("@modules/tracks/tracks.module").then(m => m.TracksModule)
+    loadChildren: () => import("@modules/tracks/tracks.module").then(m => m.TracksModule),
   },
   {
     path:"favorites",
@@ -14,7 +14,11 @@ const routes: Routes = [
   {
     path:"history",
     loadChildren: () => import("@modules/history/history.module").then(m => m.HistoryModule)
-  }
+  },
+  {
+    path: '**',
+    redirectTo: "tracks"
+  },
 ];
 
 @NgModule({
