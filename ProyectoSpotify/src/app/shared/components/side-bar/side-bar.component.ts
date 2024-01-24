@@ -17,17 +17,17 @@ export class SideBarComponent implements OnInit {
     {
       name: 'Home',
       icon: 'uil uil-estate',
-      router: ['/', 'tracks']
+      router: ['/','home', 'tracks']
     },
     {
       name: 'Buscar',
       icon: 'uil uil-search',
-      router: ['/', 'history']
+      router: ['/', 'home','history']
     },
     {
       name: 'Tu biblioteca',
       icon: 'uil uil-chart',
-      router: ['/', 'favorites'],
+      router: ['/', 'home','favorites'],
       query: { hola: 'mundo' }
     }
   ]
